@@ -44,9 +44,9 @@ public class ProductService {
 		productRepository.deleteById(id);
 	}
 	
-	public void editProduct(int id) {
+	public Product editProduct(int id) {
 		
-		productRepository.findById(id).orElse(null); 
+		return productRepository.findById(id).orElse(null); 
 	}
 }
 

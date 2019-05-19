@@ -17,9 +17,9 @@ public class RestController {
 	
 	
 	@GetMapping("saveproduct")
-	public String saveProduct(@RequestParam int id , @RequestParam String itemName, @RequestParam String content , @RequestParam double price ) {
+	public String saveProduct(@RequestParam int id , @RequestParam String itemName, @RequestParam String quantity , @RequestParam double price ) {
 		
-		Product product = new Product(id , itemName, content , price );
+		Product product = new Product(id , itemName, quantity , price );
 		productService.savemyproduct(product);
 		return "Product Saved!!";
 	}

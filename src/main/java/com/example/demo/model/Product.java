@@ -11,7 +11,7 @@ public class Product {
 	@Id
 	private int id;
 	private String itemName;
-	private String content;
+	private String quantity;
 	private double price; 
 	
 	public Product() {
@@ -21,51 +21,71 @@ public class Product {
 
 	
 
-	public Product(int id, String itemName, String content, double price) {
+	public Product(int id, String itemName, String quantity, double price) {
 		super();
 		this.id = id;
 		this.itemName = itemName;
-		this.content = content;
+		this.quantity = quantity;
 		this.price = price;
+		
 	}
+
+
 
 	public int getId() {
 		return id;
 	}
 
+
+
 	public void setId(int id) {
 		this.id = id;
 	}
+
+
 
 	public String getItemName() {
 		return itemName;
 	}
 
+
+
 	public void setItemName(String itemName) {
 		this.itemName = itemName;
 	}
 
-	public String getContent() {
-		return content;
+
+
+	public String getQuantity() {
+		return quantity;
 	}
 
-	public void setContent(String content) {
-		this.content = content;
+
+
+	public void setQuantity(String quantity) {
+		this.quantity = quantity;
 	}
+
+
 
 	public double getPrice() {
 		return price;
 	}
 
+
+
 	public void setPrice(double price) {
 		this.price = price;
 	}
-	
+
+
+
 	@Override
 	public String toString() {
-		return "Product [id=" + id + ", itemName=" + itemName + ", content=" + content + ", price=" + price + "]";
+		return "Product [id=" + id + ", itemName=" + itemName + ", quantity=" + quantity + ", price=" + price + "]";
 	}
-	
-	
 
-}
+
+
+	
+}	

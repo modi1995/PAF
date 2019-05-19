@@ -46,7 +46,7 @@ public class ProductService {
 	
 	public void editProduct(int id) {
 		
-			productRepository.findById(id); 
+		productRepository.findById(id).orElse(null); 
 	}
 }
 

@@ -91,13 +91,7 @@
 				<hr>
 				<form class="form-horizontal" method="POST" action="save-product">
 					<input type="hidden" name="id" value="${product.id }" />
-					<div class="form-group">
-						<label class="control-label col-md-3">id</label>
-						<div class="col-md-7">
-							<input type="text" class="form-control" name="id"
-								value="${product.id }" />
-						</div>
-					</div>
+					
 					<div class="form-group">
 						<label class="control-label col-md-3">Item Name</label>
 						<div class="col-md-7">
